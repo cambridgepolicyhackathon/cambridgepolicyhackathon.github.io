@@ -1,0 +1,86 @@
+########################## hero area ##########################
+hero:
+  title: "Oxbridge Policy Hackathon"
+
+  # animated text loop
+  occupations:
+    - 'Multidiscplinary Collaboration'
+    - 'Data-Driven Policymaking'
+    - 'Tackling Social Challenges'
+
+  # hero background image
+  bg_image: 'images/bg-cam.jpg'
+  # optional mobile breakpoint background
+  mobile_bg_image: 'images/bg-cam.jpg'
+
+########################### About ##################################
+about:
+  enable: true
+  # image: 'images/profile.jpg'
+  title: 'Tackle Real-World Problems with Data-Driven Solutions'
+  content: Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  button:
+    enable: true
+    label: 'Register now!'
+    link: 'https://www.google.com'
+    # icon: 'fa-download'
+
+########################### Sponsors & Partners ##############################
+sponsors:
+  enable: true
+  title: 'SPONSORS & PARTNERS'
+  sponsors_list:
+    - name: 'University of Oxford'
+      logo: 'images/sponsors/gus_small.jpg'
+
+    - name: 'University of Cambridge'
+      logo: 'images/sponsors/profile.jpg'
+
+    - name: 'Microsoft'
+      logo: 'images/sponsors/microsoft.png'
+
+    - name: 'Google'
+      logo: 'images/sponsors/google.png'
+
+    - name: 'Amazon Web Services'
+      logo: 'images/sponsors/aws.png'
+
+    - name: 'IBM'
+      logo: 'images/sponsors/ibm.png'
+
+######################### funfacts #############################3
+funfacts:
+  enable: true
+  funfacts_list:
+    - name: ''
+      image: 'images/icons/coffee.png'
+      count: ''
+
+    - name: 'Prize worth'
+      image: 'images/icons/web-development.png'
+      count: '1000'
+
+    - name: 'Challenge Cases'
+      image: 'images/icons/happy.png'
+      count: '5'
+
+
+
+############################# portfolio ################################
+# portfolio:
+#   enable: true
+#   title: 'MY WORK'
+#   portfolio_list:
+#     - name: Hugo
+#       image: 'images/portfolio/hugo.png'
+#       url: https://gohugo.io
+#       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+#     - name: Hugo Themes
+#       image: 'images/portfolio/hugothemes.png'
+#       url: https://gohugo.io
+#       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+#     - name: Just A Design
+#       image: 'images/portfolio/design.png'
+#       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
