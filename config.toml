@@ -38,7 +38,7 @@ URL = "/"
 weight = 1
 
 [[menu.main]]
-name = "About me"
+name = "About"
 URL = "/#about"
 weight = 2
 
