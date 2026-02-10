@@ -6,7 +6,7 @@ export const siteMetadata = {
   language: "en-us",
   theme: "light",
   siteName: "Cambridge Policy Hackathon",
-  siteUrl: "https://cambridgepolicyhackathon.github.io",
+  siteUrl: "https://cambridgepolicyhackathon.org",
   siteRepo: "https://github.com/cambridgepolicyhackathon/cambridgepolicyhackathon.github.io",
   siteLogo: "/CPH-favicon.svg",
   image: "/static/homepage.png",
