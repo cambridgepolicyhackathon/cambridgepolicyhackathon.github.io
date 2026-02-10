@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function LandingHero() {
   return (
@@ -55,26 +56,28 @@ export default function LandingHero() {
                   Apply now
                 </Link>
               </div>
-              {/* Partner logos: first at left, last at right, same size each */}
-              <div className="pointer-events-none mt-10 flex w-full max-w-7xl flex-wrap items-center justify-between gap-6">
-                {[
-                  { src: "/UoC.png", alt: "University of Cambridge" },
-                  { src: "/CJBS.png", alt: "CJBS" },
-                  { src: "/CSaP.png", alt: "CSaP" },
-                  { src: "/EA-cam.png", alt: "EA Cambridge" },
-                  { src: "/DPIN.png", alt: "DPIN" },
-                ].map((logo) => (
-                  <div key={logo.src} className="flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32">
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      width={128}
-                      height={64}
-                      className="max-h-full max-w-full object-contain object-center opacity-90"
-                    />
-                  </div>
-                ))}
-              </div>
+              {/* Partner logos: first at left, last at right, same size each (controlled by siteMetadata.showPartners) */}
+              {siteMetadata.showPartners && (
+                <div className="pointer-events-none mt-10 flex w-full max-w-7xl flex-wrap items-center justify-between gap-6">
+                  {[
+                    { src: "/UoC.png", alt: "University of Cambridge" },
+                    { src: "/CJBS.png", alt: "CJBS" },
+                    { src: "/CSaP.png", alt: "CSaP" },
+                    { src: "/EA-cam.png", alt: "EA Cambridge" },
+                    { src: "/DPIN.png", alt: "DPIN" },
+                  ].map((logo) => (
+                    <div key={logo.src} className="flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32">
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={128}
+                        height={64}
+                        className="max-h-full max-w-full object-contain object-center opacity-90"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </FadeUp>
           </AnimatePresence>
         </div>

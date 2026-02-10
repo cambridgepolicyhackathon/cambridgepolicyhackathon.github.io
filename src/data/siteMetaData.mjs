@@ -18,4 +18,6 @@ export const siteMetadata = {
   linkedin: "https://www.linkedin.com/company/cambridge-policy-hackathon",
   locale: "en-US",
   googleSiteVerification: "",
+  /** Set to false to hide the Partners nav link and the partner logos on the landing hero. */
+  showPartners: false,
 };
