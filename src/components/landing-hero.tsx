@@ -64,7 +64,7 @@ export default function LandingHero() {
             <FadeUp key="cta" duration={0.6} delay={0.2}>
               <div className="pointer-events-auto mt-6 inline-block">
                 <Link
-                  href="https://google.com/"
+                  href="https://forms.gle/6oxXgxNfRUd4PkCt7"
                   className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground shadow-lg transition-colors duration-200 hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
                 >
                   Apply now
