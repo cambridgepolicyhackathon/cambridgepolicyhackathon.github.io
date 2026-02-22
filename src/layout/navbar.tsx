@@ -40,7 +40,7 @@ export default function Navbar(props: NavbarProps) {
           aria-label="Return to home page"
         >
           <Image
-            src="/CPH-small.png"
+            src="/CPH-DPIN-small-logo.png"
             alt="Cambridge Policy Hackathon"
             width={80}
             height={80}
