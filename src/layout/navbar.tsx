@@ -44,7 +44,7 @@ export default function Navbar(props: NavbarProps) {
             alt="Cambridge Policy Hackathon"
             width={80}
             height={80}
-            className="h-16 w-16 object-contain sm:h-20 sm:w-20"
+            className="h-16 w-32 object-contain sm:h-30 sm:w-30"
           />
         </Link>
         <nav className="hidden items-center gap-2 rounded-full px-2 py-2 shadow-md ring-1 ring-zinc-200 backdrop-blur-md dark:ring-accent/50 md:flex">

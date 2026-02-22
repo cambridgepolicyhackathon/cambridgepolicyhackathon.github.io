@@ -2,10 +2,17 @@ import { NextSeo } from "next-seo";
 
 import FadeUp from "@/animation/fade-up";
 import TeamCard from "@/components/team/team-card";
-import { TEAM_MEMBERS } from "@/data/team";
+import { TEAM_MEMBERS, type TeamRole } from "@/data/team";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
+const ROLES: TeamRole[] = ["Co-organizer", "Challenge Director", "Advisor"];
+
 export default function Team() {
+  const membersByRole = ROLES.map((role) => ({
+    role,
+    members: TEAM_MEMBERS.filter((m) => m.role === role),
+  }));
+
   return (
     <>
       <NextSeo
@@ -28,17 +35,30 @@ export default function Team() {
           </h1>
         </FadeUp>
         <FadeUp duration={0.6} delay={0.2}>
-          <p className="mx-auto mt-8 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
             The people who make the Cambridge Policy Hackathon happen.
           </p>
         </FadeUp>
       </section>
-      <section className="mx-auto my-40 max-w-7xl px-6 sm:px-14 md:my-60 md:px-20">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {TEAM_MEMBERS.map((member, index) => (
-            <TeamCard key={member.name} member={member} index={index} />
-          ))}
-        </div>
+      <section className="mx-auto mt-12 max-w-7xl px-6 pb-20 sm:px-14 md:mt-16 md:px-20">
+        {membersByRole.map(({ role, members }, index) => (
+          <FadeUp key={role} duration={0.6}>
+            <div
+              className={
+                index > 0 ? "pt-24 sm:pt-28" : undefined
+              }
+            >
+              <h2 className="mb-8 pt-10 text-center text-2xl font-semibold text-accent sm:text-3xl first:pt-0">
+                {role}s
+              </h2>
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {members.map((member, i) => (
+                  <TeamCard key={member.name} member={member} index={i} />
+                ))}
+              </div>
+            </div>
+          </FadeUp>
+        ))}
       </section>
     </>
   );
