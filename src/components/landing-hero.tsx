@@ -77,6 +77,7 @@ export default function LandingHero() {
                   { src: "/CJBS.png", alt: "CJBS" },
                   { src: "/CSaP.png", alt: "CSaP" },
                   { src: "/EA-cam.png", alt: "EA Cambridge" },
+                  { src: "/SMA-logo-red.png", alt: "SMA" },
                   { src: "/DPIN.png", alt: "DPIN" },
                 ].map((logo) => (
                   <div key={logo.src} className="flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32">
