@@ -6,7 +6,10 @@ export interface FadeUpProps {
   children: ReactNode;
   duration: number;
   delay?: number;
+  /** When true, animate when element enters viewport. Use viewportOnce so it only runs once (e.g. on first visit to page). */
   whileInView?: boolean;
+  /** When true and whileInView is true, animation runs only the first time the element enters the viewport. Default true. */
+  viewportOnce?: boolean;
 }
 
 export default function FadeUp({
@@ -14,6 +17,7 @@ export default function FadeUp({
   duration,
   delay,
   whileInView = false,
+  viewportOnce = true,
 }: FadeUpProps) {
   const animation = {
     opacity: 1,
@@ -28,6 +32,7 @@ export default function FadeUp({
     <motion.div
       initial={{ y: 200, opacity: 0 }}
       whileInView={whileInView ? animation : {}}
+      viewport={whileInView && viewportOnce ? { once: true } : undefined}
       animate={!whileInView ? animation : {}}
     >
       {children}

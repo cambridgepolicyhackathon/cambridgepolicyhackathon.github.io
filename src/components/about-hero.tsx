@@ -4,13 +4,13 @@ import FadeUp from "@/animation/fade-up";
 
 export default function AboutHero() {
   return (
-    <section className="mx-auto max-w-7xl px-6 pt-20 sm:px-14 md:px-20">
+    <section className="mx-auto max-w-7xl px-6 pt-8 sm:px-14 md:px-20 md:pt-12">
       <div className="mx-auto max-w-3xl text-center">
         <AnimatePresence>
           <FadeUp key="about-title" duration={0.6}>
-            <h1 className="text-5xl font-bold text-accent sm:text-6xl md:text-7xl">
-              About the Hackathon
-            </h1>
+            <h2 className="text-5xl font-bold text-accent sm:text-6xl md:text-7xl">
+              About
+            </h2>
           </FadeUp>
           <FadeUp key="about-desc-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">

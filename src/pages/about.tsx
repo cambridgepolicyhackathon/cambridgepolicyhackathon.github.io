@@ -1,21 +1,28 @@
 import { NextSeo } from "next-seo";
 
-import AboutHero from "@/components/about-hero";
 import FadeUp from "@/animation/fade-up";
+import TeamCard from "@/components/team/team-card";
+import { TEAM_MEMBERS, type TeamRole } from "@/data/team";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
+const ROLES: TeamRole[] = ["Co-organizer", "Challenge Director", "Advisor"];
+
 export default function About() {
+  const membersByRole = ROLES.map((role) => ({
+    role,
+    members: TEAM_MEMBERS.filter((m) => m.role === role),
+  }));
+
   return (
     <>
       <NextSeo
-        title="About | Cambridge Policy Hackathon"
-        description="Learn about the Cambridge Policy Hackathon – where policymakers, researchers, and technologists come together to tackle real-world challenges."
+        title="Team | Cambridge Policy Hackathon"
+        description="Meet the team behind the Cambridge Policy Hackathon."
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/about`,
-          title: "About | Cambridge Policy Hackathon",
-          description:
-            "Learn about the Cambridge Policy Hackathon and how you can get involved.",
+          title: "Team | Cambridge Policy Hackathon",
+          description: "Meet the team behind the Cambridge Policy Hackathon.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
@@ -32,24 +39,42 @@ export default function About() {
           {
             property: "keywords",
             content:
-              "Cambridge Policy Hackathon, policy, hackathon, innovation, Cambridge",
+              "Cambridge Policy Hackathon, policy, hackathon, innovation, Cambridge, team",
           },
         ]}
       />
-      <AboutHero />
-      {/* <section className="mx-auto my-40 max-w-7xl px-6 sm:px-14 md:my-60 md:px-20">
-        <FadeUp duration={0.6} whileInView>
-          <h2 className="mb-12 w-full bg-gradient-to-r from-accent/70 to-accent bg-clip-text text-center text-3xl font-bold text-transparent xs:text-4xl sm:text-6xl md:text-8xl">
-            Our mission
-          </h2>
-          <p className="mx-auto max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
-            We believe that the best solutions come from bringing together
-            diverse perspectives. Our hackathon creates a space for
-            cross-sector collaboration and rapid prototyping to address
-            pressing policy challenges.
+      <section className="mx-auto max-w-7xl px-6 pt-20 sm:px-14 md:px-20">
+        <FadeUp duration={0.6}>
+          <h1 className="text-center text-5xl font-bold text-accent sm:text-6xl md:text-7xl">
+            Team
+          </h1>
+        </FadeUp>
+        <FadeUp duration={0.6} delay={0.2}>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
+            The people who make the Cambridge Policy Hackathon happen.
           </p>
         </FadeUp>
-      </section> */}
+      </section>
+      <section className="mx-auto mt-12 max-w-7xl px-6 pb-20 sm:px-14 md:mt-16 md:px-20">
+        {membersByRole.map(({ role, members }, index) => (
+          <FadeUp key={role} duration={0.6}>
+            <div
+              className={
+                index > 0 ? "pt-24 sm:pt-28" : undefined
+              }
+            >
+              <h3 className="mb-8 pt-10 text-center text-2xl font-semibold text-accent sm:text-3xl first:pt-0">
+                {role}s
+              </h3>
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {members.map((member, i) => (
+                  <TeamCard key={member.name} member={member} index={i} />
+                ))}
+              </div>
+            </div>
+          </FadeUp>
+        ))}
+      </section>
     </>
   );
 }

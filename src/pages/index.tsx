@@ -2,7 +2,9 @@ import Head from "next/head";
 
 import { NextSeo } from "next-seo";
 
+import AboutHero from "@/components/about-hero";
 import LandingHero from "@/components/landing-hero";
+import ScheduleDiagram from "@/components/schedule-diagram";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Home() {
@@ -46,6 +48,17 @@ export default function Home() {
         )}
       </Head>
       <LandingHero />
+      {/* Continuation of hero fade so it eases into the next section (no hard cut) */}
+      <div
+        className="pointer-events-none h-12 w-full sm:h-16"
+        style={{
+          marginTop: "-1px",
+          backgroundImage: `linear-gradient(to bottom, hsl(var(--background)) 0%, hsl(var(--background) / 0.6) 50%, transparent 100%)`,
+        }}
+        aria-hidden
+      />
+      <AboutHero />
+      <ScheduleDiagram />
     </>
   );
 }

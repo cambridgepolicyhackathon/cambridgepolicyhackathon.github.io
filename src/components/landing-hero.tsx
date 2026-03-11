@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import { PARTNER_LOGOS } from "@/data/partners";
 
 export default function LandingHero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -38,9 +39,12 @@ export default function LandingHero() {
         >
           <source src="/cambridge-vid.mp4" type="video/mp4" />
         </video>
-        {/* Bottom fade into sections below */}
+        {/* Bottom fade: tall, soft gradient so it continues down and eases out (no hard cut) */}
         <div
-          className="absolute inset-x-0 bottom-0 h-1/2 min-h-[200px] bg-gradient-to-t from-background to-transparent"
+          className="absolute inset-x-0 bottom-0 h-[75vh] min-h-[420px] w-full"
+          style={{
+            backgroundImage: `linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.97) 18%, hsl(var(--background) / 0.85) 38%, hsl(var(--background) / 0.5) 60%, transparent 100%)`,
+          }}
           aria-hidden
         />
       </div>
@@ -70,26 +74,37 @@ export default function LandingHero() {
                   Apply now
                 </Link>
               </div>
-              {/* Partner logos: first at left, last at right, same size each */}
-              <div className="pointer-events-none mt-10 flex w-full max-w-7xl flex-wrap items-center justify-between gap-6">
-                {[
-                  { src: "/UoC.png", alt: "University of Cambridge" },
-                  { src: "/CJBS.png", alt: "CJBS" },
-                  { src: "/CSaP.png", alt: "CSaP" },
-                  { src: "/EA-cam.png", alt: "EA Cambridge" },
-                  { src: "/SMA-logo-red.png", alt: "SMA" },
-                  { src: "/DPIN.png", alt: "DPIN" },
-                ].map((logo) => (
-                  <div key={logo.src} className="flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32">
+              {/* Partner logos: add href in src/data/partners.ts to make each clickable */}
+              <div className="pointer-events-auto mt-10 flex w-full max-w-7xl flex-wrap items-center justify-between gap-6">
+                {PARTNER_LOGOS.map((logo) => {
+                  const cellClass =
+                    "flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32 opacity-90 transition-opacity hover:opacity-100";
+                  const image = (
                     <Image
                       src={logo.src}
                       alt={logo.alt}
                       width={128}
                       height={64}
-                      className="max-h-full max-w-full object-contain object-center opacity-90 dark:brightness-0 dark:invert"
+                      className="max-h-full max-w-full object-contain object-center dark:brightness-0 dark:invert"
                     />
-                  </div>
-                ))}
+                  );
+                  return logo.href ? (
+                    <a
+                      key={logo.src}
+                      href={logo.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={cellClass}
+                      aria-label={`${logo.alt} (opens in new tab)`}
+                    >
+                      {image}
+                    </a>
+                  ) : (
+                    <div key={logo.src} className={cellClass}>
+                      {image}
+                    </div>
+                  );
+                })}
               </div>
             </FadeUp>
           </AnimatePresence>

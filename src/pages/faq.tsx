@@ -33,7 +33,7 @@ export default function FAQ() {
           </h1>
         </FadeUp>
         <FadeUp duration={0.6} delay={0.2}>
-          <p className="mx-auto mt-8 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
             Common questions about the event. Can&apos;t find your answer?{" "}
             <a href="mailto:cambridgepolicyhackathon@gmail.com" className="font-semibold text-accent underline underline-offset-4">
               Get in touch
@@ -42,7 +42,7 @@ export default function FAQ() {
           </p>
         </FadeUp>
       </section>
-      <section className="mx-auto my-40 max-w-3xl px-6 sm:px-14 md:my-60 md:px-20">
+      <section className="mx-auto mt-8 max-w-3xl px-6 pb-40 sm:px-14 md:mt-12 md:px-20 md:pb-60">
         <div className="space-y-4">
           {FAQ_ITEMS.map((item, index) => (
             <FadeUp key={index} duration={0.4} delay={0.05 * index} whileInView>
