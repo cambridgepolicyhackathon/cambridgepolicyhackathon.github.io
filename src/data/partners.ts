@@ -15,5 +15,23 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { src: "/CSaP.png", alt: "CSaP", href: "https://www.csap.cam.ac.uk/" },
   { src: "/EA-cam.png", alt: "EA Cambridge", href: "https://www.eacambridge.org/" },
   { src: "/SMA-logo-red.png", alt: "SMA", href: "https://www.moralambition.org/" },
-  { src: "/DPIN.png", alt: "DPIN", href: ""},
+  { src: "/DPIN.png", alt: "DPIN", href: "" },
+];
+
+/**
+ * Partner entries for the /partners page (name + description cards).
+ * Edit descriptions here to update the Partners page.
+ */
+export interface Partner {
+  name: string;
+  description: string;
+}
+
+export const PARTNERS: Partner[] = [
+  { name: "University of Cambridge", description: "Our host institution." },
+  { name: "CJBS", description: "Cambridge Judge Business School." },
+  { name: "CSaP", description: "Centre for Science and Policy." },
+  { name: "EA Cambridge", description: "Effective Altruism Cambridge." },
+  { name: "SMA", description: "The School for Moral Ambition." },
+  { name: "DPIN", description: "Data for Public Impact Network." },
 ];
