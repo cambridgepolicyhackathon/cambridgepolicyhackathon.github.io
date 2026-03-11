@@ -75,10 +75,10 @@ export default function LandingHero() {
                 </Link>
               </div>
               {/* Partner logos: add href in src/data/partners.ts to make each clickable */}
-              <div className="pointer-events-auto mt-10 flex w-full max-w-7xl flex-wrap items-center justify-between gap-6">
+              <div className="pointer-events-auto mt-10 grid w-full max-w-7xl grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:grid-cols-5">
                 {PARTNER_LOGOS.map((logo) => {
                   const cellClass =
-                    "flex h-14 w-28 shrink-0 items-center justify-center sm:h-16 sm:w-32 opacity-90 transition-opacity hover:opacity-100";
+                    "flex h-14 w-full items-center justify-center sm:h-16 opacity-90 transition-opacity hover:opacity-100";
                   const image = (
                     <Image
                       src={logo.src}
