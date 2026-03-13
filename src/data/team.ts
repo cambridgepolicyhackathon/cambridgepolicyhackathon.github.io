@@ -48,6 +48,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
 
   // Advisors
   {
+    name: "Christian Neubacher",
+    role: "Advisor",
+    affiliation: "Centre for Science and Policy",
+    bio: "Christian Neubacher is a Policy Engagement Planning Coordinator for CSaP. Prior to joining CSaP Christian completed a Master of Public Policy from the University of Michigan, where he also holds a BA in Economics and International Studies. He has also completed a Master's in European Politics from Columbia University. Christian has previously interned with the Executive Office of the Secretary-General at the United Nations, the International Organisation for Migration, and the European Banking Federation, alongside extensive experience in youth engagement.",
+    image: "/team/christian.png",
+    linkedin: "https://uk.linkedin.com/in/christian-neubacher",
+  },
+  {
     name: "Christos Genakos",
     role: "Advisor",
     affiliation: "University of Cambridge",
