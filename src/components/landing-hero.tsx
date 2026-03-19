@@ -62,7 +62,7 @@ export default function LandingHero() {
                 priority
               />
               <span className="mt-2 block text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                Turn evidence into impact
+                Turn evidence into impact.
               </span>
             </FadeUp>
             <FadeUp key="cta" duration={0.6} delay={0.2}>
