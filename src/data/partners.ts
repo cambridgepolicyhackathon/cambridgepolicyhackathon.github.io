@@ -16,6 +16,8 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
   { src: "/EA-cam.png", alt: "EA Cambridge", href: "https://www.eacambridge.org/" },
   { src: "/SMA-logo-red.png", alt: "SMA", href: "https://www.moralambition.org/" },
   { src: "/CUSPE-logo.png", alt: "CUSPE", href: "https://cuspe.org.uk/" },
+  { src: "/CambridgeZero.png", alt: "Cambridge Zero", href: "https://www.zero.cam.ac.uk/" },
+  { src: "/CUBISS.png", alt: "CUBISS", href: "https://www.linkedin.com/company/cambridge-cubiss/" },
   { src: "/DPIN.png", alt: "DPIN", href: "" },
 ];
 
@@ -35,5 +37,7 @@ export const PARTNERS: Partner[] = [
   { name: "EA Cambridge", description: "Effective Altruism Cambridge." },
   { name: "SMA", description: "The School for Moral Ambition." },
   { name: "CUSPE", description: "Cambridge University Science and Policy Exchange." },
+  { name: "Cambridge Zero", description: "Cambridge Zero" },
+  { name: "CUBISS", description: "Cambridge University Behavioural Insights Student Society." },
   { name: "DPIN", description: "Data for Public Impact Network." },
 ];
