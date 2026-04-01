@@ -58,7 +58,7 @@ export default function ScheduleDiagram() {
       </FadeUp>
       <FadeUp duration={0.6} delay={0.1}>
         <p className="mx-auto mt-3 max-w-2xl text-center text-base font-medium text-zinc-700 dark:text-zinc-300 sm:text-lg">
-          Friday 15 May - Sunday 17 May
+          Thursday 14 May - Saturday 16 May
         </p>
       </FadeUp>
 

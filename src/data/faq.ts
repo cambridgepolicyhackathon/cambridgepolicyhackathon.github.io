@@ -7,7 +7,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "When and where is the hackathon?",
     answer:
-      "The Cambridge Policy Hackathon (CPH) takes place from 15 to 17 May in Cambridge, UK. Details will be announced closer to the event.",
+      "The Cambridge Policy Hackathon (CPH) takes place from 14 to 16 May in Cambridge, UK. Details will be announced closer to the event.",
   },
   {
     question: "Who can participate?",
@@ -37,7 +37,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Is the event in-person?",
     answer:
-      "Yes, the HPH is an in-person event and we do not offer any online attendance options.",
+      "Yes, the CPH is an in-person event and we do not offer any online attendance options.",
   },
   {
     question: "What are the costs for attending the hackathon?",

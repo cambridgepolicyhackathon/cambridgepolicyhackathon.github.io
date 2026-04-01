@@ -1,5 +1,5 @@
 /**
- * Hackathon schedule: Friday 15 May – Sunday 17 May.
+ * Hackathon schedule: Thursday 14 May – Saturday 16 May.
  * Edit the items array for each day to describe what that day consists of.
  */
 export interface ScheduleDay {
@@ -11,9 +11,9 @@ export interface ScheduleDay {
 
 export const SCHEDULE_DAYS: ScheduleDay[] = [
   {
-    id: "friday",
-    label: "Friday",
-    date: "15 May",
+    id: "thursday",
+    label: "Thursday",
+    date: "14 May",
     items: [
       "4:30pm - Walk in",
       "5:00pm - Kickoff Presentations",
@@ -23,9 +23,9 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     ],
   },
   {
-    id: "saturday",
-    label: "Saturday",
-    date: "16 May",
+    id: "friday",
+    label: "Friday",
+    date: "15 May",
     items: [
       "10:00am - Optional Workshop 1",
       "11:00am - Optional Workshop 2",
@@ -34,9 +34,9 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     ],
   },
   {
-    id: "sunday",
-    label: "Sunday",
-    date: "17 May",
+    id: "saturday",
+    label: "Saturday",
+    date: "16 May",
     items: [
       "TBA",
     ],
