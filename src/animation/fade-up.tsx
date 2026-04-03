@@ -10,6 +10,7 @@ export interface FadeUpProps {
   whileInView?: boolean;
   /** When true and whileInView is true, animation runs only the first time the element enters the viewport. Default true. */
   viewportOnce?: boolean;
+  className?: string;
 }
 
 export default function FadeUp({
@@ -18,6 +19,7 @@ export default function FadeUp({
   delay,
   whileInView = false,
   viewportOnce = true,
+  className,
 }: FadeUpProps) {
   const animation = {
     opacity: 1,
@@ -30,6 +32,7 @@ export default function FadeUp({
   };
   return (
     <motion.div
+      className={className}
       initial={{ y: 200, opacity: 0 }}
       whileInView={whileInView ? animation : {}}
       viewport={whileInView && viewportOnce ? { once: true } : undefined}

@@ -50,7 +50,7 @@ export default function Home() {
       <LandingHero />
       {/* Continuation of hero fade so it eases into the next section (no hard cut) */}
       <div
-        className="pointer-events-none h-12 w-full sm:h-16"
+        className="pointer-events-none h-4 w-full sm:h-6"
         style={{
           marginTop: "-1px",
           backgroundImage: `linear-gradient(to bottom, hsl(var(--background)) 0%, hsl(var(--background) / 0.6) 50%, transparent 100%)`,

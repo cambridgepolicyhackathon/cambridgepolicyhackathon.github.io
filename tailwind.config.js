@@ -27,6 +27,15 @@ module.exports = {
       dropShadow: {
         accent: "0 0 1em hsl(var(--accent))",
       },
+      keyframes: {
+        "marquee-ltr": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "marquee-ltr": "marquee-ltr 50s linear infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

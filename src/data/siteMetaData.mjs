@@ -19,5 +19,5 @@ export const siteMetadata = {
   locale: "en-US",
   googleSiteVerification: "",
   /** Set to false to hide the "Partners" tab in the navigation (partner logos on the landing page always show). */
-  showPartners: false,
+  showPartners: true,
 };

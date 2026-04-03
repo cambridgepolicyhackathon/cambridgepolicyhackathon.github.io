@@ -1,6 +1,8 @@
 /**
- * Partner logos shown on the home page hero.
- * Add a `href` to make the logo clickable; leave empty string or omit for no link.
+ * Partner logos shown on the home page hero and /partners.
+ * Add a `href` to make the logo clickable; leave empty or omit for no link.
+ * Use `alt` for the full written-out name with a short abbreviation in brackets, e.g.
+ * "Centre for Science and Policy (CSaP)" — shown on the Partners page and used for image alt text.
  */
 export interface PartnerLogo {
   src: string;
@@ -9,37 +11,80 @@ export interface PartnerLogo {
   href?: string;
 }
 
-export const PARTNER_LOGOS: PartnerLogo[] = [
-  { src: "/UoC.png", alt: "University of Cambridge", href: "https://www.cam.ac.uk/" },
-  { src: "/CJBS.png", alt: "CJBS", href: "https://www.jbs.cam.ac.uk/" },
-  { src: "/CSaP.png", alt: "CSaP", href: "https://www.csap.cam.ac.uk/" },
-  { src: "/EA-cam.png", alt: "EA Cambridge", href: "https://www.eacambridge.org/" },
-  { src: "/SMA-logo-red.png", alt: "SMA", href: "https://www.moralambition.org/" },
-  { src: "/CUSPE-logo.png", alt: "CUSPE", href: "https://cuspe.org.uk/" },
-  { src: "/CambridgeZero.png", alt: "Cambridge Zero", href: "https://www.zero.cam.ac.uk/" },
-  { src: "/CUBISS.png", alt: "CUBISS", href: "https://www.linkedin.com/company/cambridge-cubiss/" },
-  { src: "/CUTEC.png", alt: "CUTEC", href: "https://www.cutec.io/" },
-  { src: "/DPIN.png", alt: "DPIN", href: "https://dpi.network/" },
+/** Host institutions */
+export const PARTNERS_EVENT_BY: PartnerLogo[] = [
+  {
+    src: "/DPIN.png",
+    alt: "Data for Public Impact Network (DPIN)",
+    href: "https://dpi.network/",
+  },
 ];
 
-/**
- * Partner entries for the /partners page (name + description cards).
- * Edit descriptions here to update the Partners page.
- */
-export interface Partner {
-  name: string;
-  description: string;
-}
+/** Sponsors and organisations that make the event possible */
+export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
+  {
+    src: "/CJBS.png",
+    alt: "Cambridge Judge Business School (CJBS)",
+    href: "https://www.jbs.cam.ac.uk/",
+  },
+  {
+    src: "/CSaP.png",
+    alt: "Centre for Science and Policy (CSaP)",
+    href: "https://www.csap.cam.ac.uk/",
+  },
+  {
+    src: "/Homes.png",
+    alt: "Homes England",
+    href: "https://www.gov.uk/government/organisations/homes-england",
+  },
+];
 
-export const PARTNERS: Partner[] = [
-  { name: "University of Cambridge", description: "Our host institution." },
-  { name: "CJBS", description: "Cambridge Judge Business School." },
-  { name: "CSaP", description: "Centre for Science and Policy." },
-  { name: "EA Cambridge", description: "Effective Altruism Cambridge." },
-  { name: "SMA", description: "The School for Moral Ambition." },
-  { name: "CUSPE", description: "Cambridge University Science and Policy Exchange." },
-  { name: "Cambridge Zero", description: "Cambridge Zero" },
-  { name: "CUBISS", description: "Cambridge University Behavioural Insights Student Society." },
-  { name: "CUTEC", description: "Cambridge University Technology & Entreprise Club"},
-  { name: "DPIN", description: "Data for Public Impact Network." },
+/** Student societies and community groups */
+export const PARTNERS_COMMUNITY: PartnerLogo[] = [
+  {
+    src: "/SMA-logo-red.png",
+    alt: "The School for Moral Ambition (SMA)",
+    href: "https://www.moralambition.org/",
+  },
+  {
+    src: "/EA-cam.png",
+    alt: "Effective Altruism Cambridge (EA Cambridge)",
+    href: "https://www.eacambridge.org/",
+  },
+  {
+    src: "/CUSPE-logo.png",
+    alt: "Cambridge University Science and Policy Exchange (CUSPE)",
+    href: "https://cuspe.org.uk/",
+  },
+  {
+    src: "/CUBISS.png",
+    alt: "Cambridge University Behavioural Insights Student Society (CUBISS)",
+    href: "https://www.linkedin.com/company/cambridge-cubiss/",
+  },
+  {
+    src: "/CambridgeZero.png",
+    alt: "Cambridge Zero (University of Cambridge)",
+    href: "https://www.zero.cam.ac.uk/",
+  },
+  {
+    src: "/CUTEC.png",
+    alt: "Cambridge University Technology & Enterprise Club (CUTEC)",
+    href: "https://www.cutec.io/",
+  },
+];
+
+/** Flat list for the home page marquee (same order as partner page sections). */
+export const PARTNER_LOGOS: PartnerLogo[] = [
+  ...PARTNERS_MADE_POSSIBLE,
+  ...PARTNERS_COMMUNITY,
+  ...PARTNERS_EVENT_BY,
+];
+
+export const PARTNER_PAGE_SECTIONS: {
+  title: string;
+  partners: PartnerLogo[];
+}[] = [
+  { title: "Made possible by", partners: PARTNERS_MADE_POSSIBLE },
+  { title: "Community Partners", partners: PARTNERS_COMMUNITY },
+  { title: "An event by", partners: PARTNERS_EVENT_BY },
 ];

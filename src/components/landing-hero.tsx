@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
+import PartnerLogoMarquee from "@/components/partner-logo-marquee";
 import { PARTNER_LOGOS } from "@/data/partners";
 
 export default function LandingHero() {
@@ -22,7 +23,7 @@ export default function LandingHero() {
 
   return (
     <section
-      className="relative flex min-h-screen h-screen w-full -mt-[9rem] items-center overflow-hidden px-6 sm:px-14 md:px-20"
+      className="relative flex min-h-screen h-screen w-full -mt-[9rem] flex-col overflow-hidden px-6 sm:px-14 md:px-20"
       aria-label="Hero"
     >
       {/* Background video at 20% opacity */}
@@ -49,8 +50,8 @@ export default function LandingHero() {
         />
       </div>
 
-      <div className="relative z-10 w-full pt-20 pointer-events-none sm:pt-24">
-        <div className="mx-auto max-w-7xl">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col pt-20 pointer-events-none sm:pt-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center pb-4 sm:pb-6">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
               <Image
@@ -74,40 +75,12 @@ export default function LandingHero() {
                   Apply now
                 </Link>
               </div>
-              {/* Partner logos: add href in src/data/partners.ts to make each clickable */}
-              <div className="pointer-events-auto mt-10 grid w-full max-w-7xl grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3 md:grid-cols-5">
-                {PARTNER_LOGOS.map((logo) => {
-                  const cellClass =
-                    "flex h-14 w-full items-center justify-center sm:h-16 opacity-90 transition-opacity hover:opacity-100";
-                  const image = (
-                    <Image
-                      src={logo.src}
-                      alt={logo.alt}
-                      width={128}
-                      height={64}
-                      className="max-h-full max-w-full object-contain object-center dark:brightness-0 dark:invert"
-                    />
-                  );
-                  return logo.href ? (
-                    <a
-                      key={logo.src}
-                      href={logo.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={cellClass}
-                      aria-label={`${logo.alt} (opens in new tab)`}
-                    >
-                      {image}
-                    </a>
-                  ) : (
-                    <div key={logo.src} className={cellClass}>
-                      {image}
-                    </div>
-                  );
-                })}
-              </div>
             </FadeUp>
           </AnimatePresence>
+          {/* Scrolling partners — part of centered hero block so it sits higher than bottom-pinned */}
+          <div className="pointer-events-auto relative left-1/2 mt-12 w-screen max-w-[100vw] -translate-x-1/2 sm:mt-14">
+            <PartnerLogoMarquee logos={PARTNER_LOGOS} />
+          </div>
         </div>
       </div>
     </section>
