@@ -71,6 +71,11 @@ export const PARTNERS_COMMUNITY: PartnerLogo[] = [
     alt: "Cambridge University Technology & Enterprise Club (CUTEC)",
     href: "https://www.cutec.io/",
   },
+  {
+    src: "/CISL.png",
+    alt: "Cambridge Institute for Sustainability Leadership (CISL)",
+    href: "https://www.cisl.cam.ac.uk/",
+  },
 ];
 
 /** Flat list for the home page marquee (same order as partner page sections). */
