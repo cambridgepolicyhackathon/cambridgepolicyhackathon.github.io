@@ -37,6 +37,11 @@ export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
     alt: "Homes England",
     href: "https://www.gov.uk/government/organisations/homes-england",
   },
+  {
+    src: "/CISL.png",
+    alt: "Cambridge Institute for Sustainability Leadership (CISL)",
+    href: "https://www.cisl.cam.ac.uk/",
+  },
 ];
 
 /** Student societies and community groups */
@@ -70,11 +75,6 @@ export const PARTNERS_COMMUNITY: PartnerLogo[] = [
     src: "/CUTEC.png",
     alt: "Cambridge University Technology & Enterprise Club (CUTEC)",
     href: "https://www.cutec.io/",
-  },
-  {
-    src: "/CISL.png",
-    alt: "Cambridge Institute for Sustainability Leadership (CISL)",
-    href: "https://www.cisl.cam.ac.uk/",
   },
 ];
 
