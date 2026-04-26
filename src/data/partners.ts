@@ -42,6 +42,11 @@ export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
     alt: "Cambridge Institute for Sustainability Leadership (CISL)",
     href: "https://www.cisl.cam.ac.uk/",
   },
+  {
+    src: "/DSIT-GDS.png",
+    alt: "UK Department for Science, Innovation and Technology, Government Digital Service",
+    href: "https://www.gov.uk/government/organisations/government-digital-service",
+  },
 ];
 
 /** Student societies and community groups */
@@ -50,6 +55,11 @@ export const PARTNERS_COMMUNITY: PartnerLogo[] = [
     src: "/SMA-logo-red.png",
     alt: "The School for Moral Ambition (SMA)",
     href: "https://www.moralambition.org/",
+  },
+  {
+    src: "/Effective-Thesis.png",
+    alt: "Effective Thesis",
+    href: "https://www.effectivethesis.org/",
   },
   {
     src: "/EA-cam.png",
@@ -75,6 +85,26 @@ export const PARTNERS_COMMUNITY: PartnerLogo[] = [
     src: "/CUTEC.png",
     alt: "Cambridge University Technology & Enterprise Club (CUTEC)",
     href: "https://www.cutec.io/",
+  },
+  {
+    src: "/El-Erian-logo.png",
+    alt: "El-Erian Institute of Behavioural Economics and Policy",
+    href: "https://www.jbs.cam.ac.uk/centres/el-erian-behavioural-economics/",
+  },
+  {
+    src: "/CUAES.png",
+    alt: "Cambridge University AI Ethics Society (CUAES)",
+    href: "https://www.instagram.com/cambridgeaiethics",
+  },
+  {
+    src: "/oxbridge-ai-x.png",
+    alt: "Oxbridge AI X",
+    href: "https://www.oxbridgeaix.uk/",
+  },
+  {
+    src: "/idealist-collective-logo.png",
+    alt: "The Idealists Collective",
+    href: "https://idealistscollective.org/",
   },
 ];
 
