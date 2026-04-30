@@ -11,14 +11,14 @@ export function cursorTrail(props: CursorTrail) {
   );
   const accentColor = `hsla(${
     colorRaw ? colorRaw.split(" ").join(",") : "0, 0%, 0%"
-  }, 0.35)`;
+  }, 0.18)`;
   const { ref, color } = props;
   const ctx = ref.current?.getContext("2d")!;
   let AnimationFeature = {
-    friction: 0.5,
-    trails: 20,
-    size: 40,
-    dampening: 0.2,
+    friction: 0.55,
+    trails: 10,
+    size: 26,
+    dampening: 0.18,
     tension: 0.98,
   };
 
@@ -116,7 +116,7 @@ export function cursorTrail(props: CursorTrail) {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
       ctx.globalCompositeOperation = "lighter";
       ctx.strokeStyle = color || accentColor;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 0.85;
       for (let x: Line, t = 0; t < AnimationFeature.trails; t++) {
         if (newLines[t] !== undefined) {
           x = newLines[t];

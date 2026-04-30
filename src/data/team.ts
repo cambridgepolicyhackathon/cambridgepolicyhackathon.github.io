@@ -61,14 +61,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
   //   image: "/team/jianxin.png",
   //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
   // },
-  {
-    name: "Jonathan Romic",
-    role: "Challenge Coaches",
-    affiliation: "University of Cambridge",
-    bio: "",
-    image: "",
-    linkedin: "",
-  },
+  // {
+  //   name: "Jonathan Romic",
+  //   role: "Challenge Coaches",
+  //   affiliation: "University of Cambridge",
+  //   bio: "",
+  //   image: "/team/jonathan.png",
+  //   linkedin: "",
+  // },
 
 
   // Advisors

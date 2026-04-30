@@ -4,7 +4,7 @@ import FadeUp from "@/animation/fade-up";
 
 export default function AboutHero() {
   return (
-    <section className="mx-auto max-w-7xl px-6 pt-4 sm:px-14 md:px-20 md:pt-6">
+    <section className="mx-auto max-w-7xl px-6 pt-12 pb-16 sm:px-14 md:px-20">
       <div className="mx-auto max-w-3xl text-center">
         <AnimatePresence>
           <FadeUp key="about-title" duration={0.6}>

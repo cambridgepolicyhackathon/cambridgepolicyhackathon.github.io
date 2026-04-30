@@ -5,7 +5,7 @@ import TeamCard from "@/components/team/team-card";
 import { TEAM_MEMBERS, type TeamRole } from "@/data/team";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
-const ROLES: TeamRole[] = ["Co-organizer", "Challenge Director", "Advisor"];
+const ROLES: TeamRole[] = ["Co-organizer", "Challenge Coaches", "Advisor"];
 
 export default function About() {
   const membersByRole = ROLES.map((role) => ({

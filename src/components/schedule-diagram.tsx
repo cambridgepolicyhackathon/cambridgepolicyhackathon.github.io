@@ -49,7 +49,7 @@ export default function ScheduleDiagram() {
   return (
     <section
       ref={sectionRef}
-      className="mx-auto max-w-7xl px-6 pt-16 pb-20 sm:px-14 md:px-20"
+      className="mx-auto max-w-7xl px-6 pt-12 pb-16 sm:px-14 md:px-20"
     >
       <FadeUp duration={0.6}>
         <h2 className="text-center text-3xl font-bold text-accent sm:text-4xl md:text-5xl">

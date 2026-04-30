@@ -44,6 +44,14 @@ export default function MobileMenu({
         >
           <Dialog.Panel className="pointer-events-none relative flex min-h-[85%] w-full flex-col items-center justify-center overflow-y-auto rounded-b-2xl border-2 border-accent/20 bg-background px-6 py-8 text-accent shadow-lg shadow-accent/10 md:px-10 md:py-16">
             <div className="pointer-events-auto flex flex-col items-center gap-6 text-center">
+              <a
+                href="https://forms.gle/6oxXgxNfRUd4PkCt7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center justify-center rounded-2xl bg-accent px-8 py-4 text-lg font-semibold text-accent-foreground shadow-lg transition-colors duration-200 hover:bg-accent/90 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background"
+              >
+                Apply now
+              </a>
               {routes.map((link, i) => (
                 <button
                   key={i}

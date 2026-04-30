@@ -3,6 +3,7 @@ import Head from "next/head";
 import { NextSeo } from "next-seo";
 
 import AboutHero from "@/components/about-hero";
+import ChallengeCases from "@/components/challenge-cases";
 import LandingHero from "@/components/landing-hero";
 import ScheduleDiagram from "@/components/schedule-diagram";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
@@ -58,6 +59,7 @@ export default function Home() {
         aria-hidden
       />
       <AboutHero />
+      <ChallengeCases />
       <ScheduleDiagram />
     </>
   );

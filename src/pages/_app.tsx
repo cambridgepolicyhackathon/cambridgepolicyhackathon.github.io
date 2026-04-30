@@ -10,6 +10,8 @@ import MainLayout from "@/layout/main-layout";
 import CursorTrailCanvas from "@/components/cursor-trail-canvas";
 import "@/styles/globals.css";
 
+const ENABLE_CURSOR_TRAIL = process.env.NEXT_PUBLIC_ENABLE_CURSOR_TRAIL === "false";
+
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
@@ -20,7 +22,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <ThemeProvider attribute="class" defaultTheme="light">
         <MainLayout>
           <AnimatePresence mode="wait" initial={false}>
-            <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" />
+            {ENABLE_CURSOR_TRAIL && (
+              <CursorTrailCanvas className="pointer-events-none fixed inset-0 -z-10 h-full w-full" />
+            )}
             <Component key={router.asPath} {...pageProps} />
           </AnimatePresence>
         </MainLayout>
