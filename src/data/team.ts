@@ -1,4 +1,4 @@
-export type TeamRole = "Co-organizer" | "Challenge Director" | "Advisor";
+export type TeamRole = "Co-organizer" | "Challenge Coaches" | "Advisor";
 
 export interface TeamMember {
   name: string;
@@ -36,15 +36,40 @@ export const TEAM_MEMBERS: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/xuelong-f-4203a3216/",
   },
 
-  // Challenge Directors
+  // Challenge Coaches
+  // {
+  //   name: "Jian Xin Lim",
+  //   role: "Challenge Coaches",
+  //   affiliation: "Effective Altruism Cambridge",
+  //   bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
+  //   image: "/team/jianxin.png",
+  //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
+  // },
+  // {
+  //   name: "Imane Chatri",
+  //   role: "Challenge Coaches",
+  //   affiliation: "Effective Altruism Cambridge",
+  //   bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
+  //   image: "/team/jianxin.png",
+  //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
+  // },
+  // {
+  //   name: "Jian Xin Lim",
+  //   role: "Challenge Coaches",
+  //   affiliation: "Effective Altruism Cambridge",
+  //   bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
+  //   image: "/team/jianxin.png",
+  //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
+  // },
   {
-    name: "Jian Xin Lim",
-    role: "Challenge Director",
-    affiliation: "Effective Altruism Cambridge",
-    bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
-    image: "/team/jianxin.png",
-    linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
+    name: "Jonathan Romic",
+    role: "Challenge Coaches",
+    affiliation: "University of Cambridge",
+    bio: "",
+    image: "",
+    linkedin: "",
   },
+
 
   // Advisors
   {
