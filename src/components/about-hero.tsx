@@ -34,7 +34,7 @@ export default function AboutHero() {
           </FadeUp>
           <FadeUp key="about-desc-2" duration={0.6} delay={0.4}>
             <p className="mt-6 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              Registrations close 2 May, 23:59 BST. Apply soon!
+              Registrations closed 2 May, 23:59 BST. Further applications will be waitlisted.
             </p>
           </FadeUp>
         </AnimatePresence>

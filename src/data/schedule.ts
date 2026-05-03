@@ -15,11 +15,11 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     label: "Thursday",
     date: "14 May",
     items: [
-      "4:30pm - Walk in",
-      "5:00pm - Kickoff Presentations",
-      "6:45pm - Dinner and Socializing",
-      "8:30pm - Team Formation Deadline",
-      "9:00pm - Start Hacking",
+      "4:00pm - Walk in",
+      "5:00pm - Kickoff",
+      "6:30pm - Dinner and socializing",
+      "8:00pm - Team formation",
+      "Start Hacking",
     ],
   },
   {
@@ -27,10 +27,9 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     label: "Friday",
     date: "15 May",
     items: [
-      "10:00am - Optional Workshop 1",
-      "11:00am - Optional Workshop 2",
-      "12:00am - Lunch",
-      "14:00pm - Case Stakeholders Q&A",
+      "Workshops",
+      "Lunch",
+      "Case stakeholders Q&A",
     ],
   },
   {
@@ -38,7 +37,10 @@ export const SCHEDULE_DAYS: ScheduleDay[] = [
     label: "Saturday",
     date: "16 May",
     items: [
-      "TBA",
+      "Final pitches and judging",
+      "Awards ceremony",
+      "Closing remarks",
+      "Closing drinks"
     ],
   },
 ];

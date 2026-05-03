@@ -53,7 +53,7 @@ export default function ScheduleDiagram() {
     >
       <FadeUp duration={0.6}>
         <h2 className="text-center text-3xl font-bold text-accent sm:text-4xl md:text-5xl">
-          Schedule
+          Provisional schedule
         </h2>
       </FadeUp>
       <FadeUp duration={0.6} delay={0.1}>

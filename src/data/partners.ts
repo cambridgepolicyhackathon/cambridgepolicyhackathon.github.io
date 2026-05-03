@@ -102,6 +102,11 @@ export const PARTNERS_COMMUNITY: PartnerLogo[] = [
     href: "https://www.oxbridgeaix.uk/",
   },
   {
+    src: "/OCPSG.png",
+    alt: "Oxford Computational Political Science Group (OCPSG)",
+    href: "https://www.politics.ox.ac.uk/oxford-computational-political-science-group",
+  },
+  {
     src: "/idealist-collective-logo.png",
     alt: "The Idealists Collective",
     href: "https://idealistscollective.org/",

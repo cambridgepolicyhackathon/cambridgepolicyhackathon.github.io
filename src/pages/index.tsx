@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import AboutHero from "@/components/about-hero";
 import ChallengeCases from "@/components/challenge-cases";
 import LandingHero from "@/components/landing-hero";
+import EventFlyer from "@/components/event-flyer";
 import ScheduleDiagram from "@/components/schedule-diagram";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
@@ -61,6 +62,7 @@ export default function Home() {
       <AboutHero />
       <ChallengeCases />
       <ScheduleDiagram />
+      <EventFlyer />
     </>
   );
 }
