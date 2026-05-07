@@ -37,14 +37,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
 
   // Challenge Coaches
-  // {
-  //   name: "Jian Xin Lim",
-  //   role: "Challenge Coaches",
-  //   affiliation: "Effective Altruism Cambridge",
-  //   bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
-  //   image: "/team/jianxin.png",
-  //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
-  // },
+  {
+    name: "Amal Alsubaie",
+    role: "Challenge Coaches",
+    affiliation: "University of Cambridge, Institute for Manufacturing",
+    bio: "Amal is an MPhil candidate in Industrial Systems, Manufacture and Management at the Institute for Manufacturing, University of Cambridge. She holds a degree in Electrical Engineering from Penn State and has worked at the Saudi Industrial Development Fund on industrial projects, feasibility studies, and energy efficiency initiatives. Her interests span industrial strategy, energy transition, and the link between engineering, policy, and investment decisions. Away from her research, she enjoys video games and listening to music.",
+    image: "/team/amal.png",
+    linkedin: "https://www.linkedin.com/in/amaldthaar/",
+  },
   // {
   //   name: "Imane Chatri",
   //   role: "Challenge Coaches",
