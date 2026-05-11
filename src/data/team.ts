@@ -46,14 +46,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/amaldthaar/",
   },
   // {
-  //   name: "Imane Chatri",
-  //   role: "Challenge Coaches",
-  //   affiliation: "Effective Altruism Cambridge",
-  //   bio: "Jian Xin is the Director of Effective Altruism Cambridge, where he runs programs connecting Cambridge students with high-impact careers in policy, research, and global priorities. He manages CHIRP (Cambridge High Impact Research Project), an 8-week intensive research program pairing students with expert mentors to produce policy briefs and research on issues including biosecurity, global health, and existential risk. He also directs the Project-Based Fellowship and coordinates Cambridge's delegation to conferences like EAGx. His work complements the Cambridge Policy Hackathon's mission of developing students' capacity to tackle pressing global challenges through evidence-based policy.",
-  //   image: "/team/jianxin.png",
-  //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
-  // },
-  // {
   //   name: "Jian Xin Lim",
   //   role: "Challenge Coaches",
   //   affiliation: "Effective Altruism Cambridge",
@@ -61,14 +53,22 @@ export const TEAM_MEMBERS: TeamMember[] = [
   //   image: "/team/jianxin.png",
   //   linkedin: "https://www.linkedin.com/in/jian-xin-lim%F0%9F%94%B8-87826a182/",
   // },
-  // {
-  //   name: "Jonathan Romic",
-  //   role: "Challenge Coaches",
-  //   affiliation: "University of Cambridge",
-  //   bio: "",
-  //   image: "/team/jonathan.png",
-  //   linkedin: "",
-  // },
+  {
+    name: "Jonathan Romic",
+    role: "Challenge Coaches",
+    affiliation: "University of Cambridge, Faculty of Education",
+    bio: "Jonathan Romic is a researcher in AI education, governance and regulation currently living and studying in Cambridge, England. His areas of specialization are AI, regulation, education, and developing policy solutions in an increasingly technology-driven global environment. Currently, Jonathan is completing his PhD focusing on AI in education and regulation at the faculty of Education at the University of Cambridge. His passion for education stems from a lifelong interest in learning, personal growth, and development.",
+    image: "/team/jonathan.png",
+    linkedin: "https://www.linkedin.com/in/jonathan-romic-485471182/",
+  },
+  {
+    name: "Alex Bartlam",
+    role: "Challenge Coaches",
+    affiliation: "Revax",
+    bio: "Alex is the co-founder & CTO of Revax, a VC funded AI startup that builds software for leading tax advisory teams. He graduated from the Cambridge MPhil Technology Policy course in 2025, before which he was a Captain in the British Army leadings teams in cyber and electronic warfare.",
+    image: "/team/alex.jpeg",
+    linkedin: "https://www.linkedin.com/in/alex-bartlam/",
+  },
 
 
   // Advisors
