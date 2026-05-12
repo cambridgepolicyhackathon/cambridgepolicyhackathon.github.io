@@ -69,6 +69,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
     image: "/team/alex.jpeg",
     linkedin: "https://www.linkedin.com/in/alex-bartlam/",
   },
+  {
+    name: "Faith Kiyuka",
+    role: "Challenge Coaches",
+    affiliation: "University of Cambridge, Judge Business School",
+    bio: "Faith Kiyuka is an MPhil candidate in Technology Policy at Cambridge Judge Business School. She has professional experience building health R&D infrastructure and clinical research capacity across Africa at the Science for Africa Foundation. She has directed complex, multi-stakeholder research portfolios within the global health ecosystem, with actors in major pharmaceutical companies, continental governing bodies, research institutions, and global health funders. Her future areas of interest include the governance of AI and emerging technologies in health and pharmaceutical contexts.",
+    image: "/team/faith.png",
+    linkedin: "https://www.linkedin.com/in/faith-kiyuka-52ba04107/",
+  },
 
 
   // Advisors
