@@ -33,9 +33,9 @@ export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
     href: "https://www.csap.cam.ac.uk/",
   },
   {
-    src: "/Homes.png",
-    alt: "Homes England",
-    href: "https://www.gov.uk/government/organisations/homes-england",
+    src: "/paypal.png",
+    alt: "PayPal",
+    href: "https://www.paypal.com/us/home",
   },
   {
     src: "/CISL.png",
@@ -46,6 +46,11 @@ export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
     src: "/DSIT-GDS.png",
     alt: "UK Department for Science, Innovation and Technology, Government Digital Service",
     href: "https://www.gov.uk/government/organisations/government-digital-service",
+  },
+  {
+    src: "/Homes.png",
+    alt: "Homes England",
+    href: "https://www.gov.uk/government/organisations/homes-england",
   },
 ];
 
