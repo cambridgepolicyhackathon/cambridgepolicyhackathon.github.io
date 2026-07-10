@@ -13,12 +13,12 @@ export interface ChallengeCase {
  */
 export const CHALLENGE_CASES: ChallengeCase[] = [
   {
-    id: "homes-england",
-    partnerName: "Homes England",
-    logoSrc: "/Homes.png",
-    title: "Designing a Housing Data Lab",
+    id: "astrazeneca",
+    partnerName: "AstraZeneca",
+    logoSrc: "/AstraZeneca.png",
+    title: "Health Care Access & Geopolitics",
     description:
-      "",
+      ""
   },
   {
     id: "cisl",
@@ -37,15 +37,17 @@ export const CHALLENGE_CASES: ChallengeCase[] = [
       "",
   },
   {
-    id: "TBA",
-    partnerName: "TBA",
-    title: "Health Care Access & Geopolitics",
+    id: "homes-england",
+    partnerName: "Homes England",
+    logoSrc: "/Homes.png",
+    title: "Designing a Housing Data Lab",
     description:
-      ""
+      "",
   },
   {
-    id: "TBA",
-    partnerName: "TBA",
+    id: "paypal",
+    partnerName: "PayPal",
+    logoSrc: "/PayPal.png",
     title: "Digital Fraud Detection & Prevention",
     description:
       "",

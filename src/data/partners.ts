@@ -33,6 +33,11 @@ export const PARTNERS_MADE_POSSIBLE: PartnerLogo[] = [
     href: "https://www.csap.cam.ac.uk/",
   },
   {
+    src: "/AstraZeneca.png",
+    alt: "AstraZeneca",
+    href: "https://www.astrazeneca.co.uk/",
+  },
+  {
     src: "/paypal.png",
     alt: "PayPal",
     href: "https://www.paypal.com/us/home",

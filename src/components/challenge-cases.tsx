@@ -49,7 +49,7 @@ export default function ChallengeCases() {
               Form a team • Pick a case • Make impact
             </div>
             <h2 className="mt-5 text-3xl font-bold text-accent sm:text-4xl md:text-5xl">
-              Challenge cases
+              Challenge cases 2026
             </h2>
             <div className="mx-auto mt-4 h-px max-w-xs bg-accent/40" aria-hidden />
           </div>
